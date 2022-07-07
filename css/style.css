@@ -1,0 +1,305 @@
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --ColorWhite: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--LightGrayishBlue);
+    font-family: 'Manrope', sans-serif;
+}
+.main-section{
+    display: grid;
+    grid-template-columns: 45% auto;
+    max-width: 65%;
+    background-color: var(--ColorWhite);
+    border-radius: 1rem;
+    box-shadow: 10px 10px 60px -30px var(--DesaturatedDarkBlue);
+}
+.drawers{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    animation-name: imgAnime;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+/* content-section */
+.content-section{
+    padding: 2.7rem;
+    
+}
+.main-div h1{
+    opacity: 1;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+    animation-name: dragdown;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+.main-div p{
+    opacity: 1;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: var(--DesaturatedDarkBlue);
+    font-weight: 500;
+    animation-name: dragdown;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+.author-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-details{
+    margin-top: 2rem;
+}
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar{
+    opacity: 1;
+    width: 3rem;
+    border-radius: 50%;
+    animation-name: avatar;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+    
+}
+.author-data{
+    opacity: 1;
+    font-size: 1rem;
+    margin-left: 1rem;
+    line-height: 1.5;
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+    animation-name: dragleft;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+.author-data p:last-child{
+    font-weight: 500;
+    color: var(--GrayishBlue);
+}
+.share{
+    position: relative;
+}
+.share-items{
+    position: absolute;
+    display: none;
+}
+.share-items div{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 1rem;
+    top: -110px;
+    left: -130px;
+}
+.share-items div *{
+    color: white;
+    margin: 0 10px;
+}
+.share-items div span:first-child{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 15px 0 0;
+    color: var(--GrayishBlue);
+    animation-name: skewIt;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.share-items div img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+.arrow{
+    
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 0 0 100% 0%;
+}
+.share-item-anime:nth-of-type(1){
+    animation-name: sland;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.share-item-anime:nth-of-type(2){
+    animation-name: sland;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.share-item-anime:nth-of-type(3){
+    animation-name: sland;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.share-svg-div{
+    
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--DesaturatedDarkBlue);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.share-svg{
+    /* opacity: 1; */
+    width: 1.2rem;
+    height: 1.2rem;
+    animation-name: sharei;
+    animation-duration: .5s;
+    animation-delay: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.share-item:hover{
+    animation-name: hoverScale;
+    animation-duration: .1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.attribution{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+#underscore{
+    color:rgb(38, 0, 255);
+    animation-name: imgAnime;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    font-weight: 700;
+    font-size: 17px;
+}
+/* animations */
+@keyframes imgAnime {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes avatar {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes dragleft {
+    0%{
+        transform: scaleX(2);
+        opacity: 1;
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+}
+@keyframes dragdown {
+    0%{
+        transform: rotateX(100deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotateX(0deg);
+        opacity: 1;
+
+    }
+}
+@keyframes sland {
+    0%{
+        transform: scale(0,0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1,1);
+        
+        opacity: 1;
+    }
+}
+@keyframes sharei{
+    0%{
+        transform: scale(0,0);
+        width: 1.2rem;
+        height: 1.2rem;
+        opacity: 1;
+    }
+    50%{
+        transform: scale(3,3);
+    }
+    75%{
+        transform: scale(0.5,0.5);
+    }
+    100%{
+        transform: scale(1,1);
+        
+        opacity: 1;
+    }
+}
+
+@keyframes skewIt{
+    0%{
+        transform: scale(-1,-1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes hoverScale{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.5,1.5);
+    }
+}
