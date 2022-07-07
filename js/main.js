@@ -33,15 +33,15 @@ document.addEventListener('click', (evt) => {
 	}
 });
 
-// var codedBy = 'NitheeshKumar';
-// var codedByElement=document.getElementById('codedBy');
-// var i=0
-// typeLetter();
-// function typeLetter() {
-//     if (i < codedBy.length) {
-//       codedByElement.innerHTML += codedBy.charAt(i);
-//       i++;
-//       setTimeout(typeLetter, 90);
-//     }
-//   }
+var codedBy = 'NitheeshKumar';
+var codedByElement=document.getElementById('codedBy');
+var i=0
+typeLetter();
+function typeLetter() {
+    if (i < codedBy.length) {
+      codedByElement.innerHTML += codedBy.charAt(i);
+      i++;
+      setTimeout(typeLetter, 90);
+    }
+  }
 
